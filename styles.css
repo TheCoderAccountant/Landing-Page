@@ -1,0 +1,72 @@
+body {
+  background-color: antiquewhite;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-img {
+  width: 100px;
+  height: auto;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: pink;
+  max-width: fit-content;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+.nav-link {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sec-1{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 2rem 3rem;
+}
+
+.about-banana{
+  margin-left: 700px;
+  text-align: center;
+  width: 300px;
+}
+
+
+
+
+ 
+
+#products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-name {
+  text-align:  center;
+  font-size: larger;
+  color: rgb(110, 74, 6);
+}
+
+.prdoduct-img {
+  position: relative;
+  margin-left: 20%;
+}
