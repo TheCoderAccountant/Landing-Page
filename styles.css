@@ -1,56 +1,86 @@
+:root {
+  --bg-main-color: #ffffff;
+  --btn-main-color: #0c9b37;
+  --font-second-color: #0c9b37;
+  --font-popping: 'Poppins', sans-serif;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background-color: antiquewhite;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* background-color: var(--bg-main-color); */
+  font-family: var(--font-popping);
+  font-weight: 400;
+  text-align: center;
+  overflow: hidden;
 }
 
 #header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.header-logo {
+  width: 100%;
+  position: relative;
 }
 
 #header-img {
-  width: 100px;
-  height: auto;
-  margin-top: 0%;
-  margin-left: 0%;
+  background-color: var(--bg-main-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8rem;
+  max-width: 15vw;
+  z-index: 2;
 }
 
 #nav-bar {
+  background-color: var(--bg-main-color);
   position: fixed;
   top: 0;
-  right: 10px;
+  right: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: pink;
-  max-width: fit-content;
-  border-radius: 10px;
-  z-index: 999;
+  gap: 0;
+  z-index: 1;
 }
 
-.nav-link {
-  padding: 10px;
+.nav-link,
+.nav-link:active,
+.nav-link:hover {
+  color: var(--font-second-color);
+  font-size: 1.8rem;
+  padding: 1rem;
   text-decoration: none;
 }
 
-.sec-1{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin: 2rem 3rem;
+.nav-link:active,
+.nav-link:hover {
+  font-weight: 600;
 }
 
-.about-banana{
-  margin-left: 700px;
-  text-align: center;
-  width: 300px;
+.section {
+  width: 100vw;
+  height: auto;
 }
 
+.sec-1 {
+  margin-top: 15vh;
+}
 
-
-
- 
+.about-banana {}
 
 #products {
   display: flex;
@@ -61,12 +91,8 @@ body {
 }
 
 .item-name {
-  text-align:  center;
   font-size: larger;
   color: rgb(110, 74, 6);
 }
 
-.prdoduct-img {
-  position: relative;
-  margin-left: 20%;
-}
+.product-img {}
